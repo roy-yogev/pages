@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1F1614" />
+  <title>Privacy Policy · Cántala</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark">C</span>
+      <span class="brand-name">Cántala</span>
+    </a>
+
+    <h1>Privacy Policy</h1>
+    <div class="effective">Effective date · 2026-05-22</div>
+
+    <p>Hi, I'm Roy, the developer of Cántala. This policy explains exactly what data Cántala collects, what it does with that data, and how you can control it. I've tried to write this in plain language. If anything is unclear, email me at <a href="mailto:royogev2@gmail.com">royogev2@gmail.com</a> and I'll fix it.</p>
+
+    <p>Cántala is built for a general audience aged 13 and up. It is not directed at children under 13, and I do not knowingly collect data from anyone under 13.</p>
+
+    <h2>What Cántala collects</h2>
+    <p>When you use Cántala, the following data is stored on my backend (Supabase):</p>
+    <ul>
+      <li><strong>Account email.</strong> Used so you can sign in and so I can send you account-related messages (password reset, account deletion confirmation).</li>
+      <li><strong>Profile name and handle.</strong> What you choose to be called inside the app, and the @handle your friends use to add you.</li>
+      <li><strong>Learning progress.</strong> Your XP, streak count, streak freezes, badges, level, current target language, and the languages you've enrolled in.</li>
+      <li><strong>Vocabulary you save.</strong> Words you tap to save while listening, plus the mastery tier the app derives from your review history.</li>
+      <li><strong>Song play history.</strong> Which songs you've started, finished, or requested, so the app can show your stats and avoid re-recommending songs you've already mastered.</li>
+      <li><strong>Push notification token.</strong> A device-specific token issued by Apple or Google so Cántala can send you streak reminders and lesson nudges. You can turn this off in iOS or Android system settings.</li>
+      <li><strong>RevenueCat subscription receipts.</strong> If you subscribe to Cántala Plus, RevenueCat (my payments processor) stores the receipt and tells my backend whether your subscription is active. I never see your card number.</li>
+      <li><strong>Spotify display name and email (only if you link Spotify).</strong> When you link a Spotify account so Cántala can play music, Spotify shares a display name and email with the app. These are cached on your device, not stored on my backend. Cántala uses Spotify only to play music. It does not read your private playlists, follow lists, or listening history beyond what's required to play the songs you choose in the app.</li>
+    </ul>
+
+    <h2>What Cántala does NOT collect</h2>
+    <ul>
+      <li><strong>Audio recordings of you singing stay on your device.</strong> When the app listens to assess your singing, the audio is processed locally and never uploaded anywhere. There is no voice recording stored on my servers.</li>
+      <li><strong>I do not sell your data to anyone, ever.</strong></li>
+      <li><strong>No third-party ad SDKs.</strong> Cántala does not contain Facebook SDK, AppsFlyer, Adjust, Branch, or any other advertising or cross-app tracking SDK. It does not use the iOS Advertising Identifier (IDFA).</li>
+      <li><strong>No location data.</strong> Cántala does not request or store your GPS location.</li>
+      <li><strong>No contacts, photos, calendar, or health data.</strong></li>
+    </ul>
+
+    <h2>Third parties</h2>
+    <p>Cántala relies on the following services to function. Each one only receives the minimum data it needs:</p>
+    <ul>
+      <li><strong>Supabase</strong> (auth + database hosting). Stores your account, profile, and learning progress.</li>
+      <li><strong>Spotify</strong> (optional, only if you link it). Receives the OAuth tokens needed to play music on your device.</li>
+      <li><strong>RevenueCat</strong> (subscription billing). Receives a pseudonymous user id and your App Store or Google Play receipt to validate Cántala Plus status.</li>
+      <li><strong>Apple Push Notification service / Firebase Cloud Messaging via Expo</strong> (notifications). Receives only your device push token and the notification payload.</li>
+      <li><strong>Google Gemini API</strong> (AI chat). When you chat with the in-app mascot (Melody), your chat message text is sent to Google's Gemini API via my backend so Melody can respond. No personally identifying fields (email, name, user id) are sent in the prompt. Google's terms apply to that API call.</li>
+    </ul>
+
+    <h2>Third-party lyrics attribution</h2>
+    <p>Lyrics displayed in Cántala are provided by <a href="https://lrclib.net">LRCLib</a>, a community-maintained synced-lyrics database. Cántala does not host an original lyrics catalog; line-by-line text is fetched from LRCLib at the time a song is added to our library and is displayed for educational use only (comprehension, translation, and vocabulary study).</p>
+    <p>Translations, vocabulary explanations, and comprehension quizzes shown alongside the lyrics are generated by Cántala's own systems and are not provided by LRCLib.</p>
+    <p>If you are a rights holder and believe content sourced via LRCLib should not appear in Cántala, please email <a href="mailto:royogev2@gmail.com">royogev2@gmail.com</a> and the affected song will be removed within 5 business days.</p>
+
+    <h2>Your rights</h2>
+    <ul>
+      <li><strong>Delete your account in the app.</strong> Open Profile, scroll to Settings, tap your account and follow the delete flow. This wipes your profile, progress, chat history, and entitlement records from my backend. Subscription cancellation has to be done separately in your App Store or Google Play account.</li>
+      <li><strong>Export your data.</strong> Email <a href="mailto:royogev2@gmail.com">royogev2@gmail.com</a> and I will send you a copy of everything Cántala has stored about you within 30 days. This covers the right of access under GDPR, CCPA, and similar laws.</li>
+      <li><strong>Ask questions or complain.</strong> Email <a href="mailto:royogev2@gmail.com">royogev2@gmail.com</a>. If you're in the EU and unhappy with my response, you can also contact your local data protection authority.</li>
+    </ul>
+
+    <h2>Data retention</h2>
+    <p>Account data persists until you delete the account. After deletion, residual backups roll off within 30 days. Aggregate analytics with no personal identifiers may be retained longer.</p>
+
+    <h2>Children</h2>
+    <p>Cántala is intended for users 13 and older. If you believe a child under 13 has signed up, email <a href="mailto:royogev2@gmail.com">royogev2@gmail.com</a> and I will delete the account.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If I change anything material, I'll update the effective date at the top and, for significant changes, post a notice inside the app before the change takes effect.</p>
+
+    <h2>Contact</h2>
+    <p>Roy Yogev, developer of Cántala<br /><a href="mailto:royogev2@gmail.com">royogev2@gmail.com</a></p>
+
+    <div class="footer">
+      <span>© 2026 Cántala</span>
+      <a href="/terms/">Terms of Service</a>
+    </div>
+  </main>
+</body>
+</html>

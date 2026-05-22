@@ -1,0 +1,132 @@
+:root {
+  --bark: #1F1614;
+  --bark-soft: #2B201C;
+  --bark-line: #372922;
+  --paper: #F8EFE2;
+  --sand: #C8B6A4;
+  --ash: #8E7D6E;
+  --coral: #FF6B57;
+  --honey: #FFB547;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bark);
+  color: var(--paper);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrap {
+  max-width: 68ch;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--paper);
+  margin-bottom: 32px;
+}
+
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--honey), var(--coral));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bark);
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.brand-name {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 8px 0 8px;
+  line-height: 1.15;
+}
+
+.effective {
+  color: var(--ash);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--paper);
+  margin: 36px 0 12px;
+  letter-spacing: -0.2px;
+}
+
+p {
+  color: var(--sand);
+  margin: 0 0 16px;
+}
+
+p strong, li strong {
+  color: var(--paper);
+  font-weight: 700;
+}
+
+ul {
+  margin: 0 0 18px;
+  padding-left: 18px;
+}
+
+li {
+  color: var(--sand);
+  margin-bottom: 8px;
+}
+
+a {
+  color: var(--honey);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+a:hover { color: var(--coral); }
+
+.footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--bark-line);
+  color: var(--ash);
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer a { color: var(--sand); }
+
+@media (max-width: 480px) {
+  .wrap { padding: 36px 20px 56px; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 18px; }
+}
